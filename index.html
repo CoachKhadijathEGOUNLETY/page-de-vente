@@ -1,122 +1,163 @@
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <title>Jeune, lève-toi – Page de Vente</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Segoe UI', sans-serif;
-            background-color: white;
-            color: #333;
-            overflow-x: hidden;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jeune, lève-toi ! – Livre de Khadijath EGOUNLETY</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #ffffff;
+      color: #333;
+      margin: 0;
+      padding: 0;
+      scroll-behavior: smooth;
+    }
 
-        header {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 1em;
-            background: white;
-            animation: zoomIn 1s ease-out;
-        }
+    .fade-in {
+      animation: fadeInZoom 1s ease-in-out both;
+    }
 
-        header img {
-            max-width: 250px;
-            height: auto;
-            border-radius: 8px;
-        }
+    @keyframes fadeInZoom {
+      0% {
+        opacity: 0;
+        transform: scale(0.9);
+      }
+      100% {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
 
-        h1 {
-            font-size: 2em;
-            color: #d35400;
-            margin: 0.5em 0;
-            text-align: center;
-        }
+    header {
+      text-align: center;
+      padding: 2em 1em 1em;
+    }
 
-        h2 {
-            color: #e67e22;
-            font-size: 1.5em;
-            margin-top: 1.5em;
-        }
+    header img {
+      width: 250px;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
 
-        p {
-            font-size: 1em;
-            line-height: 1.6;
-            padding: 0 1em;
-        }
+    h1 {
+      font-size: 2em;
+      color: #e67e22;
+      margin-top: 0.5em;
+    }
 
-        .btn-container {
-            text-align: center;
-            margin: 2em;
-        }
+    h2 {
+      font-size: 1.5em;
+      margin-top: 1.5em;
+      color: #d35400;
+    }
 
-        .btn {
-            background-color: #e74c3c;
-            color: white;
-            padding: 1em 2em;
-            border: none;
-            font-size: 1.2em;
-            border-radius: 25px;
-            cursor: pointer;
-            transition: background-color 0.3s;
-            text-decoration: none;
-        }
+    h3 {
+      font-size: 1.2em;
+      margin-top: 1em;
+      color: #e67e22;
+    }
 
-        .btn:hover {
-            background-color: #c0392b;
-        }
+    p {
+      line-height: 1.6;
+      font-size: 1em;
+      margin: 0.8em 0;
+      padding: 0 1em;
+    }
 
-        @keyframes zoomIn {
-            from {
-                transform: scale(0.95);
-                opacity: 0;
-            }
-            to {
-                transform: scale(1);
-                opacity: 1;
-            }
-        }
+    .cta-button {
+      display: inline-block;
+      background-color: #e67e22;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 25px;
+      font-size: 1em;
+      font-weight: bold;
+      text-decoration: none;
+      margin-top: 1em;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
 
-        @media (min-width: 768px) {
-            header {
-                flex-direction: row;
-                justify-content: space-around;
-            }
-        }
-    </style>
+    .cta-button:hover {
+      background-color: #d35400;
+      transform: scale(1.05);
+    }
+
+    .top-button {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+
+    @media (max-width: 768px) {
+      .top-button {
+        position: static;
+        display: flex;
+        justify-content: center;
+        margin-top: 1em;
+      }
+
+      header img {
+        width: 180px;
+      }
+
+      h1 {
+        font-size: 1.5em;
+      }
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 3em;
+      font-size: 0.9em;
+      color: #666;
+      padding: 1em;
+    }
+  </style>
 </head>
-<body>
 
-<header>
-    <img src="couverture-jeune-leve-toi.jpg" alt="Couverture du livre">
-    <div>
-        <h1>Jeune, lève-toi</h1>
-        <p><strong>Par Khadijath EGOUNLETY</strong></p>
-    </div>
-</header>
+<body class="fade-in">
 
-<main>
-    <section>
-        <h2>Pourquoi ce livre ?</h2>
-        <p>Ce livre vise à réveiller consciemment les cœurs des jeunes, les pousser à agir, à découvrir et prendre possession de leur but dans cette génération. À travers des enseignements puissants, ce livre pousse chacun à se lever.</p>
-    </section>
+  <div class="top-button">
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeY7i3h5BnNqP7s0v6FhCLdQOfjyElcGTh8IhW2ihIti2JLKA/viewform" class="cta-button">Acheter maintenant</a>
+  </div>
 
-    <section>
-        <h2>À qui s’adresse ce livre ?</h2>
-        <p>Ce livre s’adresse aux jeunes qui veulent impacter leur génération, à ceux qui sont fatigués de rester les bras croisés, aux rêveurs qui veulent passer à l’action, et à ceux qui ont besoin d’un réveil intérieur.</p>
-    </section>
+  <header>
+    <img src="couverture-jeune-leve-toi.jpg" alt="Couverture du livre Jeune, lève-toi" />
+    <h1>Jeune, lève-toi !</h1>
+    <p>Par <strong>Khadijath EGOUNLETY</strong></p>
+  </header>
 
-    <section>
-        <h2>Un appel à te lever…</h2>
-        <p>C’est un appel à la jeunesse pour ne plus subir sa vie mais en devenir l’acteur principal. Il t’invite à faire un choix clair, à t’engager, à prendre position et à poser des actions concrètes pour ton avenir.</p>
-    </section>
+  <section>
+    <h2>Pourquoi ce livre ?</h2>
+    <p>Ce livre vise à réveiller consciemment le cœur des jeunes, à les pousser à agir, à découvrir et à prendre possession de leur but dans cette génération. À travers des enseignements puissants, il pousse chacun à se lever !</p>
+  </section>
 
-    <div class="btn-container">
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeY7i3h5BnNqP7s0v6FhCLdQOfjyElcGTh8IhW2ihIti2JLKA/viewform?usp=sharing" class="btn">Acheter maintenant</a>
-    </div>
-</main>
+  <section>
+    <h2>À qui s'adresse ce livre ?</h2>
+    <p>Le livre s’adresse à tous les jeunes en quête de sens, de repères et de direction. À ceux qui veulent impacter leur génération malgré les défis.</p>
+  </section>
+
+  <section>
+    <h2>Un message pour ta génération</h2>
+    <p>C’est un appel à se lever, à cesser d’attendre, à refuser la passivité, à devenir acteur de sa vie et de sa société.</p>
+    <p>C’est un cri du cœur pour que chaque jeune réalise qu’il porte une lumière précieuse que le monde attend !</p>
+  </section>
+
+  <section>
+    <h2>Informations de paiement</h2>
+    <p><strong>Prix :</strong> 5000 F CFA</p>
+    <p><strong>Mobile Money :</strong> +229 01 97 35 91 50 (MTN)</p>
+    <p>Après paiement, remplissez le formulaire ci-dessous pour recevoir votre exemplaire :</p>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeY7i3h5BnNqP7s0v6FhCLdQOfjyElcGTh8IhW2ihIti2JLKA/viewform" class="cta-button">Acheter maintenant</a>
+  </section>
+
+  <footer>
+    &copy; 2025 Khadijath EGOUNLETY – Tous droits réservés.
+  </footer>
 
 </body>
 </html>
+
