@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Jeune, lève-toi – Page de Vente</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background-color: white;
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 1em;
+            background: white;
+            animation: zoomIn 1s ease-out;
+        }
+
+        header img {
+            max-width: 250px;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        h1 {
+            font-size: 2em;
+            color: #d35400;
+            margin: 0.5em 0;
+            text-align: center;
+        }
+
+        h2 {
+            color: #e67e22;
+            font-size: 1.5em;
+            margin-top: 1.5em;
+        }
+
+        p {
+            font-size: 1em;
+            line-height: 1.6;
+            padding: 0 1em;
+        }
+
+        .btn-container {
+            text-align: center;
+            margin: 2em;
+        }
+
+        .btn {
+            background-color: #e74c3c;
+            color: white;
+            padding: 1em 2em;
+            border: none;
+            font-size: 1.2em;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            text-decoration: none;
+        }
+
+        .btn:hover {
+            background-color: #c0392b;
+        }
+
+        @keyframes zoomIn {
+            from {
+                transform: scale(0.95);
+                opacity: 0;
+            }
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        @media (min-width: 768px) {
+            header {
+                flex-direction: row;
+                justify-content: space-around;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="couverture-jeune-leve-toi.jpg" alt="Couverture du livre">
+    <div>
+        <h1>Jeune, lève-toi</h1>
+        <p><strong>Par Khadijath EGOUNLETY</strong></p>
+    </div>
+</header>
+
+<main>
+    <section>
+        <h2>Pourquoi ce livre ?</h2>
+        <p>Ce livre vise à réveiller consciemment les cœurs des jeunes, les pousser à agir, à découvrir et prendre possession de leur but dans cette génération. À travers des enseignements puissants, ce livre pousse chacun à se lever.</p>
+    </section>
+
+    <section>
+        <h2>À qui s’adresse ce livre ?</h2>
+        <p>Ce livre s’adresse aux jeunes qui veulent impacter leur génération, à ceux qui sont fatigués de rester les bras croisés, aux rêveurs qui veulent passer à l’action, et à ceux qui ont besoin d’un réveil intérieur.</p>
+    </section>
+
+    <section>
+        <h2>Un appel à te lever…</h2>
+        <p>C’est un appel à la jeunesse pour ne plus subir sa vie mais en devenir l’acteur principal. Il t’invite à faire un choix clair, à t’engager, à prendre position et à poser des actions concrètes pour ton avenir.</p>
+    </section>
+
+    <div class="btn-container">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeY7i3h5BnNqP7s0v6FhCLdQOfjyElcGTh8IhW2ihIti2JLKA/viewform?usp=sharing" class="btn">Acheter maintenant</a>
+    </div>
+</main>
+
+</body>
+</html>
